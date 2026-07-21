@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tamrole NG</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <a href="#top" class="brand">
+      <svg width="30" height="30" viewBox="0 0 32 32" fill="none"><rect x="2" y="2" width="28" height="28" rx="6" stroke="#1B2A41" stroke-width="2"/><path d="M9 20 L9 15 L12 11 L20 11 L23 15 L23 20" stroke="#1B2A41" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="20" r="2" stroke="#1B2A41" stroke-width="2"/><circle cx="20" cy="20" r="2" stroke="#1B2A41" stroke-width="2"/></svg>
+      Tamrole Ng
+    </a>
+    <div class="navlinks">
+      <a href="#inventory">Inventory</a>
+      <a href="#shipping">Shipping</a>
+      <a href="#tracking">Track a car</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="#contact" class="nav-cta">Get a quote</a>
+  </nav>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow">Car sales &amp; door-to-door shipping</div>
+      <h1>Buy the car.<br>We'll get it home.</h1>
+      <p class="lead">Portline Auto sells inspected new and used vehicles, then handles the paperwork, the freight, and the delivery — so the car you chose is the car that shows up at your door.</p>
+      <div class="hero-ctas">
+        <a href="#inventory" class="btn btn-primary">Browse inventory</a>
+        <a href="#tracking" class="btn btn-ghost">Track a shipment</a>
+      </div>
+      <div class="chip-row">
+        <div class="chip">Inspected before pickup</div>
+        <div class="chip">Insured in transit</div>
+        <div class="chip">Tracked door-to-door</div>
+      </div>
+    </div>
+
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 480 420" width="100%" height="100%">
+        <path id="route" d="M60 340 C 140 340, 150 200, 230 190 S 360 90, 420 70" fill="none" stroke="#C9BFA8" stroke-width="2" stroke-dasharray="1 10" stroke-linecap="round"/>
+        <circle cx="60" cy="340" r="5" fill="#1B2A41"/>
+        <g transform="translate(30,300)">
+          <path d="M0 30 L0 18 L10 8 L34 8 L44 18 L44 30" fill="none" stroke="#1B2A41" stroke-width="3" stroke-linejoin="round"/>
+          <circle cx="11" cy="30" r="4.5" fill="#F7F3EC" stroke="#1B2A41" stroke-width="3"/>
+          <circle cx="33" cy="30" r="4.5" fill="#F7F3EC" stroke="#1B2A41" stroke-width="3"/>
+        </g>
+        <g id="mover">
+          <circle r="7" fill="#D6572A"/>
+          <path d="M-3 -1 L3 -1 L2 2 L-2 2 Z" fill="#fff"/>
+        </g>
+        <g transform="translate(400,50)">
+          <path d="M0 24 L0 6 A6 6 0 0 1 6 0 H18 A6 6 0 0 1 24 6 V24" fill="none" stroke="#1B2A41" stroke-width="2.5"/>
+          <path d="M-6 24 H30" stroke="#1B2A41" stroke-width="2.5"/>
+        </g>
+        <text x="404" y="48" class="pin-label" font-family="IBM Plex Mono" font-size="10" fill="#5B6472">PORT</text>
+        <text x="20" y="368" class="pin-label" font-family="IBM Plex Mono" font-size="10" fill="#5B6472">YOUR DOOR</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="trust-rail">
+    <div class="trust-item">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D6572A" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+      <span>Every vehicle inspected before it leaves the lot</span>
+    </div>
+    <div class="trust-item">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D6572A" stroke-width="2"><path d="M3 12h18M12 3v18"/><circle cx="12" cy="12" r="9"/></svg>
+      <span>Nationwide and cross-border shipping</span>
+    </div>
+    <div class="trust-item">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D6572A" stroke-width="2"><rect x="3" y="8" width="18" height="10" rx="2"/><path d="M7 8V6a5 5 0 0 1 10 0v2"/></svg>
+      <span>Fully insured from lot to driveway</span>
+    </div>
+    <div class="trust-item">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D6572A" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+      <span>Live tracking, no guessing where it is</span>
+    </div>
+  </div>
+</div>
+
+<section id="inventory">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow small">What we sell</div>
+        <h2>Currently on the lot</h2>
+      </div>
+      <p>Inspected new and used vehicles across eight brands. Filter by make or sort by price.</p>
+    </div>
+
+    <div class="inventory-controls">
+      <div class="filter-bar" id="filter-bar">
+        <button class="filter-pill active" data-brand="all">All brands</button>
+        <button class="filter-pill" data-brand="Toyota">Toyota</button>
+        <button class="filter-pill" data-brand="Honda">Honda</button>
+        <button class="filter-pill" data-brand="Ford">Ford</button>
+        <button class="filter-pill" data-brand="BMW">BMW</button>
+        <button class="filter-pill" data-brand="Hyundai">Hyundai</button>
+        <button class="filter-pill" data-brand="Mercedes-Benz">Mercedes-Benz</button>
+        <button class="filter-pill" data-brand="Kia">Kia</button>
+        <button class="filter-pill" data-brand="Nissan">Nissan</button>
+      </div>
+      <label class="sort-select">
+        Sort
+        <select id="sort-select">
+          <option value="featured">Featured</option>
+          <option value="low">Price: low to high</option>
+          <option value="high">Price: high to low</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="listings" id="listings">
+
+      <article class="listing-card" data-brand="Toyota" data-price="24500">
+        <button class="wishlist" aria-label="Save this listing">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.6-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.4-9.5 9-9.5 9Z"/></svg>
+        </button>
+        <div class="listing-art" style="--car-stroke:var(--navy)">
+          <svg viewBox="0 0 140 70" width="100%"><path d="M10 48 L16 28 Q22 18 38 18 L92 18 Q106 18 112 28 L128 48" fill="none" stroke="var(--car-stroke)" stroke-width="2.5" stroke-linejoin="round"/><line x1="4" y1="48" x2="134" y2="48" stroke="var(--car-stroke)" stroke-width="2.5"/><circle cx="34" cy="50" r="8" fill="var(--paper)" stroke="var(--car-stroke)" stroke-width="2.5"/><circle cx="104" cy="50" r="8" fill="var(--paper)" stroke="var(--car-stroke)" stroke-width="2.5"/></svg>
+        </div>
+        <div class="listing-body">
+          <div class="brand-badge">Toyota</div>
+          <h3>Camry LE</h3>
+          <div class="spec-grid mono">
+            <div><span class="lbl">Year</span>2023</div>
+            <div><span class="lbl">Miles</span>18,400</div>
+            <div><span class="lbl">Trans</span>Auto</div>
+            <div><span class="lbl">Fuel</span>Petrol</div>
+          </div>
+          <div class="feature-chips">
+            <span>Backup camera</span><span>Bluetooth</span><span>1 owner</span>
+          </div>
+          <div class="listing-footer">
+            <div class="price">From <strong>$24,500</strong><sup>*</sup></div>
+            <div class="listing-btns">
+              <a href="#contact" class="btn btn-primary sm buy-btn" data-car="Toyota Camry LE">Buy now</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="listing-card" data-brand="Honda" data-price="27900">
+        <button class="wishlist" aria-label="Save this listing">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.6-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.4-9.5 9-9.5 9Z"/></svg>
+        </button>
+        <div class="listing-art" style="--car-stroke:var(--accent)">
+          <svg viewBox="0 0 140 70" width="100%"><path d="M8 48 L12 24 Q16 14 30 14 L98 14 Q112 14 118 24 L132 48" fill="none" stroke="var(--car-stroke)" stroke-width="2.5" stroke-linejoin="round"/><line x1="2" y1="48" x2="138" y2="48" stroke="var(--car-stroke)" stroke-width="2.5"/><circle cx="30" cy="50" r="8.5" fill="var(--paper)" stroke="var(--car-stroke)" stroke-width="2.5"/><circle cx="98" cy="50" r="8.5" fill="var(--paper)" stroke="var(--car-stroke)" stroke-width="2.5"/></svg>
+        </div>
+        <div class="listing-body">
+          <div class="brand-badge">Honda</div>
+          <h3>CR-V EX</h3>
+          <div class="spec-grid mono">
+            <div><span class="lbl">Year</span>2022</div>
+            <div><span class="lbl">Miles</span>26,100</div>
+            <div><span class="lbl">Trans</span>Auto</div>
+            <div><span class="lbl">Fuel</span>Petrol</div>
+          </div>
+          <div class="feature-chips">
+            <span>AWD</span><span>Sunroof</span><span>Heated seats</span>
+          </div>
+          <div class="listing-footer">
+            <div class="price">From <strong>$27,900</strong><sup>*</sup></div>
+            <div class="listing-btns">
+              <a href="#contact" class="btn btn-primary sm buy-btn" data-car="Honda CR-V EX">Buy now</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="listing-card" data-brand="Ford" data-price="32000">
+        <button class="wishlist" aria-label="Save this listing">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.6-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.4-9.5 9-9.5 9Z"/></svg>
+        </button>
+        <div class="listing-art" style="--car-stroke:var(--brass)">
+          <svg viewBox="0 0 140 70" width="100%"><path d="M6 48 L10 30 Q13 20 24 20 L54 20 L54 48 M58 48 L58 26 L96 26 L114 48" fill="none" stroke="var(--car-stroke)" stroke-width="2.5" stroke-linejoin="round"/><line x1="2" y1="48" x2="120" y2="48" stroke="var(--car-stroke)" stroke-width="2.5"/><circle cx="28" cy="50" r="8" fill="var(--paper)" stroke="var(--car-stroke)" stroke-width="2.5"/><circle cx="92" cy="50" r="8" fill="var(--paper)" stroke="var(--car-stroke)" stroke-width="2.5"/></svg>
+        </div>
+        <div class="listing-body">
+          <div class="brand-badge">Ford</div>
+          <h3>F-150 XLT</h3>
+          <div class="spec-grid mono">
+            <div><span class="lbl">Year</span>2021</div>
+            <div><span class="lbl">Miles</span>33,700</div>
+            <div><span class="lbl">Trans</span>Auto</div>
+            <div><span class="lbl">Fuel</span>Petrol</div>
+          </div>
+          <div class="feature-chips">
+            <span>4WD</span><span>Tow package</span><span>Bed liner</span>
+          </div>
+          <div class="listing-footer">
+            <div class="price">From <strong>$32,000</strong><sup>*</sup></div>
+            <div class="listing-btns">
+              <a href="#contact" class="btn btn-primary sm buy-btn" data-car="Ford F-150 XLT">Buy now</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="listing-card" data-brand="BMW" data-price="38700">
+        <button class="wishlist" aria-label="Save this listing">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.6-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.4-9.5 9-9.5 9Z"/></svg>
+        </button>
+        <div class="listing-art" style="--car-stroke:var(--steel)">
+          <svg viewBox="0 0 140 70" width="100%"><path d="M10 48 L16 28 Q22 18 38 18 L92 18 Q106 18 112 28 L128 48" fill="none" stroke="var(--car-stroke)" stroke-width="2.5" stroke-linejoin="round"/><line x1="4" y1="48" x2="134" y2="48" stroke="var(--car-stroke)" stroke-width="2.5"/><circle cx="34" cy="50" r="8" fill="var(--paper)" stroke="var(--car-stroke)" stroke-width="2.5"/><circle cx="104" cy="50" r="8" fill="var(--paper)" stroke="var(--car-stroke)" stroke-width="2.5"/></svg>
+        </div>
+        <div class="listing-body">
+          <div class="brand-badge">BMW</div>
+          <h3>3 Series 330i</h3>
+          <div class="spec-grid mono">
+            <div><span class="lbl">Year</span>2023</div>
+            <div><span class="lbl">Miles</span>12,900</div>
+            <div><span class="lbl">Trans</span>Auto</div>
+            <div><span class="lbl">Fuel</span>Petrol</div>
+          </div>
+          <div class="feature-chips">
+            <span>Leather</span><span>Nav</span><span>1 owner</span>
+          </div>
+          <div class="listing-footer">
+            <div class="price">From <strong>$38,700</strong><sup>*</sup></div>
+            <div class="listing-btns">
+              <a href="#contact" class="btn btn-primary sm buy-btn" data-car="BMW 3 Series 330i">Buy now</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="listing-card" data-brand="Hyundai" data-price="25300">
+        <button class="wishlist" aria-label="Save this listing">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.6-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.4-9.5 9-9.5 9Z"/></svg>
+        </button>
+        <div class="listing-art" style="--car-stroke:var(--navy)">
+          <svg viewBox="0 0 140 70" width="100%"><path d="M8 48 L12 24 Q16 14 30 14 L98 14 Q112 14 118 24 L132 48" fill="none" stroke="var(--car-stroke)" stroke-width="2.5" stroke-linejoin="round"/><line x1="2" y1="48" x2="138" y2="48" stroke="var(--car-stroke)" stroke-width="2.5"/><circle cx="30" cy="50" r="8.5" fill="var(--paper)" stroke="var(--car-stroke)" stroke-width="2.5"/><circle cx="98" cy="50" r="8.5" fill="var(--paper)" stroke="var(--car-stroke)" stroke-width="2.5"/></svg>
+        </div>
+        <div class="listing-body">
+          <div class="brand-badge">Hyundai</div>
+          <h3>Tucson SEL</h3>
+          <div class="spec-grid mono">
+            <div><span class="lbl">Year</span>2022</div>
+            <div><span class="lbl">Miles</span>21,500</div>
+            <div><span class="lbl">Trans</span>Auto</div>
+            <div><span class="lbl">Fuel</span>Petrol</div>
+          </div>
+          <div class="feature-chips">
+            <span>AWD</span><span>Backup camera</span><span>Warranty</span>
+          </div>
+          <div class="listing-footer">
+            <div class="price">From <strong>$25,300</strong><sup>*</sup></div>
+            <div class="listing-btns">
+              <a href="#contact" class="btn btn-primary sm buy-btn" data-car="Hyundai Tucson SEL">Buy now</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="listing-card" data-brand="Mercedes-Benz" data-price="42900">
+        <button class="wishlist" aria-label="Save this listing">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.6-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.4-9.5 9-9.5 9Z"/></svg>
+        </button>
+        <div class="listing-art" style="--car-stroke:var(--accent)">
+          <svg viewBox="0 0 140 70" width="100%"><path d="M10 48 L16 28 Q22 18 38 18 L92 18 Q106 18 112 28 L128 48" fill="none" stroke="var(--car-stroke)" stroke-width="2.5" stroke-linejoin="round"/><line x1="4" y1="48" x2="134" y2="48" stroke="var(--car-stroke)" stroke-width="2.5"/><circle cx="34" cy="50" r="8" fill="var(--paper)" stroke="var(--car-stroke)" stroke-width="2.5"/><circle cx="104" cy="50" r="8" fill="var(--paper)" stroke="var(--car-stroke)" stroke-width="2.5"/></svg>
+        </div>
+        <div class="listing-body">
+          <div class="brand-badge">Mercedes-Benz</div>
+          <h3>C-Class C300</h3>
+          <div class="spec-grid mono">
+            <div><span class="lbl">Year</span>2023</div>
+            <div><span class="lbl">Miles</span>9,800</div>
+            <div><span class="lbl">Trans</span>Auto</div>
+            <div><span class="lbl">Fuel</span>Petrol</div>
+          </div>
+          <div class="feature-chips">
+            <span>Leather</span><span>Sunroof</span><span>1 owner</span>
+          </div>
+          <div class="listing-footer">
+            <div class="price">From <strong>$42,900</strong><sup>*</sup></div>
+            <div class="listing-btns">
+              <a href="#contact" class="btn btn-primary sm buy-btn" data-car="Mercedes-Benz C-Class C300">Buy now</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="listing-card" data-brand="Kia" data-price="24800">
+        <button class="wishlist" aria-label="Save this listing">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.6-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.4-9.5 9-9.5 9Z"/></svg>
+        </button>
+        <div class="listing-art" style="--car-stroke:var(--brass)">
+          <svg viewBox="0 0 140 70" width="100%"><path d="M8 48 L12 24 Q16 14 30 14 L98 14 Q112 14 118 24 L132 48" fill="none" stroke="var(--car-stroke)" stroke-width="2.5" stroke-linejoin="round"/><line x1="2" y1="48" x2="138" y2="48" stroke="var(--car-stroke)" stroke-width="2.5"/><circle cx="30" cy="50" r="8.5" fill="var(--paper)" stroke="var(--car-stroke)" stroke-width="2.5"/><circle cx="98" cy="50" r="8.5" fill="var(--paper)" stroke="var(--car-stroke)" stroke-width="2.5"/></svg>
+        </div>
+        <div class="listing-body">
+          <div class="brand-badge">Kia</div>
+          <h3>Sportage LX</h3>
+          <div class="spec-grid mono">
+            <div><span class="lbl">Year</span>2022</div>
+            <div><span class="lbl">Miles</span>19,200</div>
+            <div><span class="lbl">Trans</span>Auto</div>
+            <div><span class="lbl">Fuel</span>Petrol</div>
+          </div>
+          <div class="feature-chips">
+            <span>Backup camera</span><span>Warranty</span><span>Low mileage</span>
+          </div>
+          <div class="listing-footer">
+            <div class="price">From <strong>$24,800</strong><sup>*</sup></div>
+            <div class="listing-btns">
+              <a href="#contact" class="btn btn-primary sm buy-btn" data-car="Kia Sportage LX">Buy now</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="listing-card" data-brand="Nissan" data-price="22600">
+        <button class="wishlist" aria-label="Save this listing">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.6-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.4-9.5 9-9.5 9Z"/></svg>
+        </button>
+        <div class="listing-art" style="--car-stroke:var(--steel)">
+          <svg viewBox="0 0 140 70" width="100%"><path d="M10 48 L16 28 Q22 18 38 18 L92 18 Q106 18 112 28 L128 48" fill="none" stroke="var(--car-stroke)" stroke-width="2.5" stroke-linejoin="round"/><line x1="4" y1="48" x2="134" y2="48" stroke="var(--car-stroke)" stroke-width="2.5"/><circle cx="34" cy="50" r="8" fill="var(--paper)" stroke="var(--car-stroke)" stroke-width="2.5"/><circle cx="104" cy="50" r="8" fill="var(--paper)" stroke="var(--car-stroke)" stroke-width="2.5"/></svg>
+        </div>
+        <div class="listing-body">
+          <div class="brand-badge">Nissan</div>
+          <h3>Altima SV</h3>
+          <div class="spec-grid mono">
+            <div><span class="lbl">Year</span>2021</div>
+            <div><span class="lbl">Miles</span>29,600</div>
+            <div><span class="lbl">Trans</span>Auto</div>
+            <div><span class="lbl">Fuel</span>Petrol</div>
+          </div>
+          <div class="feature-chips">
+            <span>Bluetooth</span><span>Backup camera</span><span>1 owner</span>
+          </div>
+          <div class="listing-footer">
+            <div class="price">From <strong>$22,600</strong><sup>*</sup></div>
+            <div class="listing-btns">
+              <a href="#contact" class="btn btn-primary sm buy-btn" data-car="Nissan Altima SV">Buy now</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="listing-note">*Example listings and prices shown for template purposes — replace with your real inventory and pricing.</p>
+    <p class="empty-state" id="empty-state" hidden>No vehicles match that filter yet — try "All brands".</p>
+  </div>
+</section>
+
+<section id="shipping" class="shipping-section">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow small">How shipping works</div>
+        <h2>From the lot to your driveway, in four steps</h2>
+      </div>
+      <p>The same process whether the car's crossing town or crossing a border.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num mono">01</div>
+        <h3>Choose your vehicle</h3>
+        <p>Browse inventory or tell us what you're after — we'll source it if it's not already on the lot.</p>
+      </div>
+      <div class="step">
+        <div class="step-num mono">02</div>
+        <h3>We inspect &amp; document</h3>
+        <p>Every vehicle is checked and its paperwork prepared before it's cleared for transport.</p>
+      </div>
+      <div class="step">
+        <div class="step-num mono">03</div>
+        <h3>Loaded &amp; en route</h3>
+        <p>Your car is loaded onto a carrier or container and assigned a tracking number.</p>
+      </div>
+      <div class="step">
+        <div class="step-num mono">04</div>
+        <h3>Delivered to you</h3>
+        <p>It arrives at the address you gave us, inspected on arrival, ready to drive.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="tracking">
+  <div class="wrap tracking-grid">
+    <div>
+      <div class="eyebrow small">Track a shipment</div>
+      <h2>Know exactly where your car is</h2>
+      <p class="body-text">Every shipment gets a manifest number the moment it leaves the lot. Use it any time to see status, location, and estimated arrival — no phone calls needed.</p>
+      <a href="#contact" class="btn btn-primary" style="margin-top:8px;">Get your manifest number</a>
+    </div>
+
+    <div class="manifest-card">
+      <div class="manifest-head">
+        <span class="mono">MANIFEST NO. PLA-04821</span>
+        <span class="status-pill">In transit</span>
+      </div>
+      <div class="manifest-route">
+        <div class="point">
+          <div class="dot filled"></div>
+          <div><div class="mono small">ORIGIN</div><div>Lot 12, Portline Yard</div></div>
+        </div>
+        <div class="route-line"></div>
+        <div class="point">
+          <div class="dot"></div>
+          <div><div class="mono small">DESTINATION</div><div>Your address</div></div>
+        </div>
+      </div>
+      <ul class="timeline">
+        <li class="done"><span class="mono small">DAY 1</span> Inspected &amp; cleared for transport</li>
+        <li class="done"><span class="mono small">DAY 2</span> Loaded onto carrier</li>
+        <li class="active"><span class="mono small">DAY 4</span> In transit — on schedule</li>
+        <li><span class="mono small">DAY 6</span> Out for final delivery</li>
+      </ul>
+      <p class="sample-note">Sample manifest shown for illustration — yours will look like this once your car ships.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="wrap cta-inner">
+    <div>
+      <h2>Ready to find your next car?</h2>
+      <p>Tell us what you're looking for and where it needs to end up. We'll take it from there.</p>
+    </div>
+    <form class="quote-form" id="quote-form">
+      <input type="text" placeholder="What are you looking for?" aria-label="Vehicle you're looking for" required>
+      <input type="email" placeholder="you@email.com" aria-label="Email address" required>
+      <button type="submit">Request a quote</button>
+    </form>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap foot-grid">
+    <div class="foot-about">
+      <a href="#top" class="brand">
+        <svg width="26" height="26" viewBox="0 0 32 32" fill="none"><rect x="2" y="2" width="28" height="28" rx="6" stroke="#F7F3EC" stroke-width="2"/><path d="M9 20 L9 15 L12 11 L20 11 L23 15 L23 20" stroke="#F7F3EC" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="20" r="2" stroke="#F7F3EC" stroke-width="2"/><circle cx="20" cy="20" r="2" stroke="#F7F3EC" stroke-width="2"/></svg>
+        Portline Auto
+      </a>
+      <p>Car sales and door-to-door shipping. Replace this with your dealership's real address and hours.</p>
+    </div>
+    <div class="foot-col">
+      <h4>Visit</h4>
+      <p>123 Example Way<br>Your City, Your Country</p>
+      <p>+1 (555) 000-0000<br>hello@portlineauto.example</p>
+    </div>
+    <div class="foot-col">
+      <h4>Site</h4>
+      <a href="#inventory">Inventory</a>
+      <a href="#shipping">Shipping</a>
+      <a href="#tracking">Track a car</a>
+    </div>
+    <div class="foot-col">
+      <h4>Follow</h4>
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">X</a>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>Template — swap in your dealership's details</span>
+    <span>© Portline Auto</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
