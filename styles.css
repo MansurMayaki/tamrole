@@ -53,8 +53,8 @@ nav.wrap{display:flex; align-items:center; justify-content:space-between; height
 }
 
 .brand .logo{
-    width:24px;      /* Adjust to your preferred size */
-    height:24px;
+    width:32px;      /* Adjust to your preferred size */
+    height:32px;
     object-fit:contain;
     border-radius:4px;   /* Optional if your logo is square */
 }
