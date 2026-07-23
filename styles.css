@@ -19,11 +19,20 @@ body{
   overflow-x:hidden;
 }
 
-body{
+/* body{
     background:
         radial-gradient(circle at top right,#fff6ec,transparent 30%),
         radial-gradient(circle at bottom left,#eef5ff,transparent 35%),
         #F7F3EC;
+} */
+
+
+body{
+    background:
+        radial-gradient(circle at top right,#2b2b2b,transparent 30%),
+        radial-gradient(circle at bottom left,#1a1a1a,transparent 35%),
+        #000;
+    color:#fff;
 }
 
 h1,h2,h3{
