@@ -1,13 +1,13 @@
 :root{
-  --paper:#F7F3EC;
-  --paper-2:#EFE8DA;
-  --ink:#161C24;
-  --navy:#1B2A41;
-  --steel:#5B6472;
+  --paper:#0D0D0D;
+  --paper-2:#171717;
+  --ink:#FFFFFF;
+  --navy:#FFFFFF;
+  --steel:#B5B5B5;
   --accent:#D6572A;
-  --brass:#9C7A3C;
-  --line:#DED5C2;
-  --white:#FFFFFF;
+  --brass:#D4AF37;
+  --line:#2C2C2C;
+  --white:#1A1A1A;
 }
 *{box-sizing:border-box; margin:0; padding:0;}
 html{scroll-behavior:smooth;}
@@ -23,7 +23,7 @@ body{
     background:
         radial-gradient(circle at top right,#fff6ec,transparent 30%),
         radial-gradient(circle at bottom left,#eef5ff,transparent 35%),
-        #020100;
+        #F7F3EC;
 }
 
 h1,h2,h3{
